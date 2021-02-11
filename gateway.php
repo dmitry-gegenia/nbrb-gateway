@@ -16,7 +16,7 @@ function getRatesOnNBRB($on_date,$dm) {
 if (!isset($_GET['ondate']))
     $on_date = date('m/d/Y');
 else
-    if (preg_match('/^\d{2}\/\d{2}\/\d{4}$|^\d{1}\/\d{1}\/\d{4}$|^\d{1}\/\d{2}\/\d{4}$/m', $_GET['ondate']) == 1)
+    if (preg_match('/^\d{2}\/\d{2}\/\d{4}$|^\d{1}\/\d{1}\/\d{4}$|^\d{1}\/\d{2}\/\d{4}$|^\d{4}-\d{2}-\d{2}$/m', $_GET['ondate']) == 1)
         $on_date = date('m/d/Y',strtotime($_GET['ondate']));
     else
         $on_date = date('m/d/Y');
