@@ -1,1 +1,4 @@
-FROM nginx:1.9.15-alpine
+FROM php:7.4.23-apache
+COPY ./* /var/www/html/
+RUN chown -R www-data:www-data /var/www
+CMD ["start-apache"]
