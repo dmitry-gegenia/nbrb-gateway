@@ -1,4 +1,4 @@
 FROM php:7.4.23-apache
-COPY gateway.php /var/www/html/gateway.php
-RUN chown www-data:www-data /var/www/html/gateway.php
+COPY ./* /var/www/html/
+RUN chown -R www-data:www-data /var/www/html
 CMD ["apache2-foreground"]
