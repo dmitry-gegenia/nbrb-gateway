@@ -5,5 +5,6 @@ http://www.nbrb.by/Services/XmlExRates.aspx?ondate=
 ## на
 http://адрес вашего сайта или IP/gateway.php?ondate=
 
-Для запуска приложения в контейнере можно использовать сборку
-docker run -d --restart always --name nbrb -p 8288:80 dmitryge/nbrb:latest 
+## Для запуска приложения в контейнере можно использовать сборку
+
+## docker run -d --restart always --name nbrb -p 8288:80 dmitryge/nbrb:latest
